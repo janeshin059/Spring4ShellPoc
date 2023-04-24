@@ -13,7 +13,7 @@ Once the the 2 pods and 1 services are created successfully, use the following c
 ```sh
 $ kubectl get all
 ```
-![image](https://github.com/jieliau/Spring4ShellPoc/blob/master/getAll.png)
+![WebPage](screenshots/getAll.png?raw=true)
 
 Now, you have 2 vulnerable pods. One is for coinminer and another one is for Spring4Shell
 
@@ -46,7 +46,7 @@ root@vulmachine-pod:/# ./tmp/coinminer
 
 #### Exploit the Spring4Shell service
 Check the output of the `kubectl get all` and find out the EXTERNAL-IP for your deployed service. Open your browser and connect to it.
-![image](https://github.com/jieliau/Spring4ShellPoc/blob/master/checkService.png)
+![WebPage](screenshots/checkService.png?raw=true)
 
 Once you see the above, you are good to exploit it.
 ```sh
