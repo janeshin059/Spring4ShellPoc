@@ -46,6 +46,8 @@ root@vulmachine-pod:/# ./tmp/coinminer
 
 #### Exploit the Spring4Shell service
 Check the output of the `kubectl get all` and find out the EXTERNAL-IP for your deployed service. Open your browser and connect to it.
+
+
 ![WebPage](screenshots/checkService.png?raw=true)
 
 Once you see the above, you are good to exploit it.
