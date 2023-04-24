@@ -1,0 +1,40 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jie-spring4shell-pod
+  labels:
+    app: jie-spring4shell
+spec:
+  containers:
+    - name: jie-spring4shell
+      image: jieliau/spring4shell
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vulmachine-pod
+  labels:
+    app: vulmachine
+spec:    
+  containers:
+    - name: vulmachine
+      image: jieliau/vulmachine
+      imagePullPolicy: IfNotPresent
+      command: ["/bin/bash", "-ce", "tail -f /dev/null"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jie-sprig4shell
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: jie-spring4shell
+  type: LoadBalancer
+---

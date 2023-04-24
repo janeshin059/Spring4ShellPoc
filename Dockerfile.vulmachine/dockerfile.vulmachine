@@ -1,0 +1,9 @@
+FROM ubuntu:18.04
+
+RUN apt-get update -y && apt-get install curl wget python3 python3-pip -y
+COPY coinminer /tmp/
+RUN chmod +x /tmp/coinminer
+RUN pip3 install requests
+COPY exploit.py /tmp/
+
+CMD ["/bin/bash"]
