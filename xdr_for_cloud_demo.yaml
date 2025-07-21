@@ -2,13 +2,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: jie-spring4shell-pod
+  name: spring4shell-pod
   labels:
-    app: jie-spring4shell
+    app: spring4shell
 spec:
   containers:
-    - name: jie-spring4shell
-      image: jieliau/spring4shell
+    - name: spring4shell
+      image: 022499044118.dkr.ecr.ap-northeast-2.amazonaws.com/spring4shell:latest
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 8080
@@ -19,7 +19,7 @@ metadata:
   name: vulmachine-pod
   labels:
     app: vulmachine
-spec:    
+spec:
   containers:
     - name: vulmachine
       image: jieliau/vulmachine
@@ -29,12 +29,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: jie-sprig4shell
+  name: sprig4shell
 spec:
   ports:
   - port: 8080
     protocol: TCP
   selector:
-    app: jie-spring4shell
+    app: spring4shell
   type: LoadBalancer
 ---
