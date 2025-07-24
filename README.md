@@ -1,10 +1,10 @@
 # Spring4Shell and Coinminer PoC
 
 
-# STEP 1. https://github.com/reznok/Spring4Shell-POC 를 git clone
-# STEP 2. clone 한 exploit.py 를 본 repo의 exploit.py로 교체
-# STEP 3. docker build . -t spring4shell 로 빌드
-# STEP 4. 아래 내용을 참고하여 실행 (kubectl apply -f xdr_for_cloud_demo.yaml)
+### STEP 1. https://github.com/reznok/Spring4Shell-POC 를 git clone
+### STEP 2. clone 한 exploit.py 를 본 repo의 exploit.py로 교체
+### STEP 3. docker build . -t spring4shell 로 빌드
+### STEP 4. 아래 내용을 참고하여 실행 (kubectl apply -f xdr_for_cloud_demo.yaml)
 
 
 ## This is for testing and demo purpose
