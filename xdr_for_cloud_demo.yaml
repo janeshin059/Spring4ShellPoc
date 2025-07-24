@@ -9,6 +9,7 @@ spec:
   containers:
     - name: spring4shell
       image: 022499044118.dkr.ecr.ap-northeast-2.amazonaws.com/spring4shell:latest
+      ## Registry에 이미지를 올린 후 받기 or 로컬에서 이미지 빌드하여 사용
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 8080
