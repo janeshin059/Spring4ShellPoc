@@ -28,7 +28,7 @@ Coinminer pod 및 Spring4Shell pod - 취약한 pod 가 2개 생성됩니다.
 
 ## STEP 5. Use cases
 
-### Coinminer 공격
+### 1. Coinminer Attack
 #### Get the malware sample from Wildfire and execute it
 ```sh
 $ kubectl exec -it vulmachine-pod  -- /bin/bash
@@ -57,7 +57,7 @@ root@vulmachine-pod:/# ./tmp/coinminer
 ![WebPage](screenshots/Coinminer.png?raw=true)
 
 
-### Exploit the Spring4Shell service
+### 2. Exploit the Spring4Shell service
 `kubectl get all` 명령의 출력을 확인하여 배포된 서비스의 EXTERNAL-IP를 찾고, 해당 IP 주소를 웹 브라우저에 입력하여 접속합니다.
 
 ![WebPage](screenshots/checkService.png?raw=true)
