@@ -66,7 +66,7 @@ root@vulmachine-pod:/# ./tmp/coinminer
 ```sh
 $ python3 exploit.py --url "http://"your service external ip":8080/helloworld/greeting"
 ```
-![WebPage](screenshots/exploitpy?raw=true)
+![WebPage](screenshots/exploitpy.png?raw=true)
 
 위 과정이 완료되면 webshell이 서버에 업로드되며, 아래 명령어를 사용하여 id 또는 /etc/password 파일을 확인할 수 있습니다.
 ```sh
